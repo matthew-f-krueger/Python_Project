@@ -1,0 +1,42 @@
+Developer Guide
+1. Overview
+A Pong game built with Pygame, featuring dynamic backgrounds, power-ups, glowing borders, and player controls.\
+Players can purchase power-ups, control paddles, and manage ball speeds and effects.
+
+2. Libraries Used
+pygame: For graphics, input, and game state management.
+random: For generating random visual effects (background colors, stars, etc.).
+math: For basic math
+
+3. Game Structure
+Game States: Start screen, gameplay, shop screen, and game over screen.
+Power-Ups: Purchase power-ups during gameplay that affect ball speed, paddle size, or score.
+
+4. Key Functions
+draw_start_screen(): Displays start screen with effects.
+main(): Core game loop managing game flow, input, and rendering.
+draw_shop(): Displays the shop screen with decorations.
+game_over_screen(winner): Displays end-of-game screen with effects.
+reset_game(): Resets the game state after a round.
+
+5. Important Variables
+left_player, right_player: Player data (score, money, paddle speed).
+ball_speed_x, ball_speed_y: Ball movement speed.
+game_over: Flag indicating if the game is over.
+
+6. Game Mechanics
+Player Movement: Controlled via W/S (left) and arrow keys (right).
+Ball Behavior: Bounces off walls and paddles, speeds up over time.
+Scoring: Player scores when the opponent misses the ball.
+Power-Ups: Players can buy power-ups (1-4 for left, 7-0 for right).
+
+7. UI Elements
+Start Screen: Displays game title and instructions.
+Gameplay Screen: The main screen where the players can play the game.
+Shop Screen: Shows powerups and allows the players to buy them.
+Game Over Screen: Shows winner, background effects, and replay options.
+
+8. Customization
+Ball Speed: Adjust speed increase rate.
+Player Settings: Modify paddle speed, score, and money.
+Max Points: Set the score required to win.
